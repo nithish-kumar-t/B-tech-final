@@ -25,7 +25,7 @@ for i in os.listdir(pictures):
     image=face_recognition.load_image_file(i)
     encoding =face_recognition.face_encodings(image)[0]
     known_face_encodings.append(encoding)
-    known_face_names.append(i.split(.)[0])
+    known_face_names.append(i.split('.')[0])
 # Initialize some variables
 face_locations = []
 face_encodings = []
